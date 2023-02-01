@@ -1,0 +1,120 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"
+></script>
+
+
+</head>
+<body>
+
+<jsp:include page="header.jsp"/>
+
+
+<!-- Carousel wrapper -->
+<div id="carouselDarkVariant" class="carousel slide carousel-fade carousel-dark" data-mdb-ride="carousel">
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button
+      data-mdb-target="#carouselDarkVariant"
+      data-mdb-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      data-mdb-target="#carouselDarkVariant"
+      data-mdb-slide-to="1"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      data-mdb-target="#carouselDarkVariant"
+      data-mdb-slide-to="2"
+      aria-label="Slide 1"
+    ></button>
+  </div>
+
+  <!-- Inner -->
+  <div class="carousel-inner">
+    <!-- Single item -->
+    <div class="carousel-item active">
+      <img src="https://images.unsplash.com/photo-1591768793355-74d04bb6608f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80" class="d-block w-100" alt="Motorbike Smoke"/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Rich industry experience</h5>
+        <p>We bring together years of diverse experience in the transport industry. As the best online transport booking company,</p>
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=875&q=80" class="d-block w-100" alt="Mountaintop"/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Advanced technology</h5>
+        <p>Our adoption of technology, proven expertise and a huge network of fleet owners and drivers helps us to serve you anywhere, anytime across any part of the country.</p>
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1418&q=80" class="d-block w-100" alt="Woman Reading a Book"/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Hassle-free services</h5>
+        <p>We provide hassle-free shipping and flawless logistics solutions for all your Transport needs, whether small or big, to all parts across the country.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Inner -->
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-mdb-target="#carouselDarkVariant" data-mdb-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-mdb-target="#carouselDarkVariant" data-mdb-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<section>
+<div>
+
+<p>   
+<h1> Cargo Services is most reliable, dedicated and expert online Transport logistics services partner!</h1></p>
+<br>
+<p> Our company is equipped with advanced equipment, modern tools, and expertise that enable us to help our consumers with crucial transportation and supply chain solutions. We ensure businesses that they will get excellent-quality, prompt, and secure transportation services irrespective of time-constraint, the heavy load issue, and any other related problem.
+
+Being the prime logistics services provider, we believe that people, technology, infrastructure and expertise all work together to help businesses to succeed and henceforth, we are offering the right blend of all these.</p>
+
+
+</div>
+
+</section>
+
+
+<jsp:include page="footer.jsp"/>
+
+</body>
+</html>

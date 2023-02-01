@@ -1,0 +1,26 @@
+package Session1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Script1 {
+
+	ChromeDriver driver;
+	public void open()
+	{ 
+		System.setProperty("webdriver.chrome.driver", "D:\\WJP_220940320119\\Library\\chromedriver_win32\\chromedriver.exe");
+		driver=new ChromeDriver();
+		driver.get("https://demo.guru99.com/v4/");
+		driver.manage().window().maximize();
+		driver.findElement(By.name("uid")).sendKeys("mngr474951");
+		driver.findElement(By.name("password")).sendKeys("umubyqU");
+		driver.findElement(By.name("btnLogin")).click();
+		//driver.close();
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      Script1 obj=new Script1();
+      obj.open();
+	}
+
+}

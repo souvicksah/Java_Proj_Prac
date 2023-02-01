@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="D:\WJP_220940320119\spring-CRUD-ORM\src\main\resources\cfg.xml"/>
+			<item value="D:\WJP_220940320119\Spring-Setter-DI"/>
+			<item value="D:\WJP_220940320119\Trial2Day2\src\main\java\com\sou\comp\Main.java"/>
+			<item value="D:\WJP_220940320119\hbm-crud_app_prac2_Criteria"/>
+			<item value="D:\WJP_220940320119\Practice1"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="com.sou"/>
+		</list>
+		<list key="name">
+			<item value="Cargo-Services-Final"/>
+			<item value="spring-prac-1"/>
+			<item value="Spring-Setter-DI"/>
+			<item value="Trial2Day2"/>
+			<item value="spr-firstapp"/>
+			<item value="trial-spr"/>
+		</list>
+		<list key="artifactId">
+			<item value="Cargo-Services-Final"/>
+			<item value="spring-prac-1"/>
+			<item value="Spring-Setter-DI"/>
+			<item value="Trial2Day2"/>
+			<item value="spr-firstapp"/>
+			<item value="trial-spr"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="Cargo-Services-Spring-Boot-8"/>
+			<item value="com.sou"/>
+		</list>
+		<list key="name">
+			<item value="Cargo-Services-Spring-Boot-8"/>
+			<item value="Cargo-Services-App"/>
+			<item value="spr-mvc-hello-app"/>
+		</list>
+		<list key="artifactId">
+			<item value="Cargo-Services-Spring-Boot-8"/>
+			<item value="Cargo-Services-App"/>
+			<item value="spr-mvc-hello-app"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

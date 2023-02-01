@@ -1,0 +1,21 @@
+package Session1;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Script1 {
+
+	ChromeDriver driver;
+	//to open a browser
+	public void Open()	
+	{
+		System.setProperty("webdriver.chrome.driver", "D:\\WJP_220940320119\\Library\\chromedriver.exe");
+	    driver=new ChromeDriver();
+	    driver.get(null);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Script1 o=new Script1();
+    
+	}
+
+}

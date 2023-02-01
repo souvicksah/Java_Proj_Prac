@@ -1,0 +1,158 @@
+<%@page import="com.team5.service.ProductServiceImpl"%>
+<%@page import="com.team5.model.Product"%>
+<%@page import="java.util.List"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%
+  List<Product> list=new ProductServiceImpl().selectAll();
+  
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Product Form</title>
+    <link rel="stylesheet" href="ProductFormStyle.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://unpkg.com/gijgo@1.9.14/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.14/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css"
+  rel="stylesheet"
+/>
+<style>
+.bg-img{
+background-image: url("https://corlettexpress.com/wp-content/uploads/2020/03/AdobeStock_246515233-1574x787.jpeg");
+}
+.container{
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+    color: black;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 7px;
+    width: 30%;
+    height: 85%;
+    padding: 20px;
+    background-color: white;
+    float: right;
+}
+</style>
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"
+></script>
+</head>
+<body>
+<jsp:include page="header.jsp"/>
+<div class="bg-img">
+<Form action="product_add_controller.jsp" method="post" class="container">
+            <div class="formnew">
+            <h1>Booking</h1>
+            <div class="input">
+            <div class="inputBoxNew">
+            <label for="source">Source</label>
+ 			<select class="form-control" id="source" name="source" required>
+                  <option name="source"  value="">Select Option</option>
+                  <option name="source" value="Ahmedabad">Ahmedabad</option>
+                  <option name="source" value="Bangalore">Bangalore</option>
+                  <option name="source" value="Chennai">Chennai</option>
+                  <option name="source" value="Delhi">Delhi</option>             
+                  <option name="source" value="Hyderabad">Hyderabad</option>             
+                  <option name="source" value="Jaipur">Jaipur</option>             
+                  <option name="source" value="Kolkata">Kolkata</option>             
+                  <option name="source" value="Mumbai">Mumbai</option>             
+                  <option name="source" value="Pune">Pune</option>             
+                </select>            
+                
+                <label for="destination">Destination</label>
+                <select class="form-control" id="destination" name="destination" >
+                  <option name="destination"  value="">Select Option</option>
+                  <option name="destination" value="Ahmedabad">Ahmedabad</option>
+                  <option name="destination" value="Bangalore">Bangalore</option>
+                  <option name="destination" value="Chennai">Chennai</option>
+                  <option name="destination" value="Delhi">Delhi</option>             
+                  <option name="destination" value="Hyderabad">Hyderabad</option>             
+                  <option name="destination" value="Jaipur">Jaipur</option>             
+                  <option name="destination" value="Kolkata">Kolkata</option>             
+                  <option name="destination" value="Mumbai">Mumbai</option>             
+                  <option name="destination" value="Pune">Pune</option>             
+                </select> 
+            </div>
+            
+              <div class="inputBoxNew">
+                <label for="trucktype">Truck Type</label>
+                <select class="form-control" id="trucktype" name="trucktype" required>
+                  <option name="trucktype"  value="">Select Option</option>
+                  <option name="trucktype" value="1.5">ACE / DOST / PICKUP (1.5 TON)</option>
+                  <option name="trucktype" value="4">TATA 407 / EICHER 14FT (4 TON)</option>
+                  <option name="trucktype" value="7">32FT CONTAINER (7 TON)</option>
+                  <option name="trucktype" value="10">TATA TRUCK (10 TON)</option>             
+                </select>
+              </div>
+              <div class="inputBoxNew">
+                <label for="goodstype">Goods Type</label>
+                <select class="form-control" id="goodstype" name="goodstype" required>
+                  <option name="goodstype" value="">Select Option</option>
+                  <option name="goodstype" value="Industrial Machinery">Industrial Machinery</option>
+                  <option name="goodstype" value="Household Goods">Household Goods</option>
+                  <option name="goodstype" value="Textile / Garments">Textile / Garments</option>
+                  <option name="goodstype" value="Scrap">Scrap</option>
+                  <option name="goodstype" value="Others">Others</option>
+                </select>
+              </div>
+            
+              <div class="inputBoxNew ">
+              <label for="bookingdate">Booking Date</label>
+			   <input name="bookingdate" id="datepicker" width="276" data-date-end-date="1d"  required/>
+			    <script>
+			        $('#datepicker').datepicker({
+			            uiLibrary: 'bootstrap4',
+			            
+			            format:'yyyy-mm-dd',			           
+			            minDate: new Date()
+			            	  
+			        });
+			    </script>
+              </div>
+            
+  
+              <div class="inputBoxNew">
+                <button type="submit" id="psub">Add Product</button>
+              </div>
+            </div>
+          </div>
+          </Form>
+          </div>
+          <%-- <table style="border:1px solid black;text-align: center" width=100%>
+             <thead>
+             <tr style="border: 1px solid black">
+                <th style="border: 1px solid black">Source</th>
+                <th style="border: 1px solid black">Destination</th>
+                <th style="border: 1px solid black">Goods Type</th>
+                <th style="border: 1px solid black">BookingDate</th>
+             </tr>
+             </thead>
+             <tbody>
+                 <%for(int i=0;i<list.size();i++){ %>
+                 <tr style="border: 1px solid black">
+                     <td style="border: 1px solid black"><%=list.get(i).getSource() %></td>
+                     <td style="border: 1px solid black"><%=list.get(i).getDestination() %></td>
+                     <td style="border: 1px solid black"><%=list.get(i).getGoodstype() %></td>
+                     <td style="border: 1px solid black"><%=list.get(i).getBookingdate() %></td>
+                 </tr>
+                 <%} %>
+             </tbody>
+          </table> --%>
+          
+   <jsp:include page="footer.jsp"/>
+</body>
+</html>
